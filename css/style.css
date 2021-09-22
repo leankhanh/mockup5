@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --primary-moderate-violet: hsl(263, 55%, 52%);
+    --primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --primary-white: hsl(0, 0%, 100%);
+    --neutral-light-gray: hsl(0, 0%, 81%);
+    --neutral-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-light-grayish-blue);
+}
+
+.container {
+    width: 35%;
+    margin-top: 4em;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.info {
+    margin-left: 1em;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+li {
+    list-style: none;
+}
+
+.name {
+    font-size: 14px;
+    color: var(--neutral-light-gray);
+}
+
+.tag {
+    font-size: 11px;
+    color: hsl(0, 0%, 50%);
+}
+
+.intro {
+    margin-bottom: 0.7em;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: var(--primary-white);
+    line-height: 24px;
+    
+}
+
+.review {
+    color: hsl(0, 0%, 70%);
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 1.4em;
+}
+
+.card1 {
+    background-color: var(--primary-moderate-violet);
+    padding: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+#quotation img {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: -1;
+    margin-right: 1.5em;
+} 
+
+.card1 .profile-img {
+    border: 2px solid hsl(263, 55%, 62%);
+}
+
+.card2 {
+    background-color: var(--primary-very-dark-grayish-blue);
+    padding: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+}
+
+.card2 .profile-img {
+    border: 2px solid hsl(217, 19%, 25%);
+}
+
+.card3 {
+    background-color: var(--primary-white);
+    padding: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+}
+
+.card3 .intro {
+    color: var(--primary-very-dark-blackish-blue);
+}
+
+.card4 {
+    background-color: var(--primary-very-dark-blackish-blue);
+    padding: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+}
+
+.card4 .profile-img {
+    border: 2px solid var(--primary-moderate-violet);
+}
+
+.card5 {
+    background-color: var(--primary-white);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.card5 .intro {
+    color: var(--primary-very-dark-blackish-blue);
+}
+

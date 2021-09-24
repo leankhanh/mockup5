@@ -17,7 +17,6 @@
 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +24,7 @@ body {
 }
 
 .container {
-    width: 35%;
+    width: 330px;
     margin-top: 4em;
 }
 
@@ -136,5 +135,47 @@ li {
 
 .card5 .intro {
     color: var(--primary-very-dark-blackish-blue);
+}
+
+@media only screen and (min-width: 1440px) {
+    /* For desktop: */
+    .card1 {
+        grid-area: card1;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+    }
+
+    .card4 {
+        grid-area: card4;
+    }
+
+    .card5 {
+        grid-area: card5;
+    }
+
+    .container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            'card1 card1 card2 card5'
+            'card3 card4 card4 card5';
+        grid-gap: 20px;
+    }
+
+    .card1, .card2 {
+        margin-bottom: 0;
+    }
+
+    .card5 {
+        margin-bottom: 1.5em;
+    }
 }
 
